@@ -1,0 +1,3 @@
+! copyright Files:"src/uthash.h" Copyright=~s/\shttp:.*//
+! copyright Files:"src/store/redis/redis_nodeset.c" Copyright=~s/\s\(.*\)//g
+! copyright Files:~/.*/ Copyright=~s/\sunder\sthe\sMIT\sLicence//g

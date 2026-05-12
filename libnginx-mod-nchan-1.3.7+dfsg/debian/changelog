@@ -1,0 +1,118 @@
+libnginx-mod-nchan (1:1.3.7+dfsg-4+ubuntu24.04.1+deb.meiners.net+1.28.3) noble; urgency=medium
+
+  * Backport to noble from resolute
+
+ -- David Meiners <david@meiners.net>  Thu, 07 May 2026 17:46:22 +0000
+
+libnginx-mod-nchan (1:1.3.7+dfsg-4build3) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.3-1.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 31 Mar 2026 20:29:08 +0200
+
+libnginx-mod-nchan (1:1.3.7+dfsg-4build2) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.2.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 17 Feb 2026 22:01:58 +0100
+
+libnginx-mod-nchan (1:1.3.7+dfsg-4build1) resolute; urgency=medium
+
+  * Rebuild against new nginx 1.28.1.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 29 Dec 2025 14:12:28 +0100
+
+libnginx-mod-nchan (1:1.3.7+dfsg-4) unstable; urgency=medium
+
+  * d/watch: rewrite to version 5, use Github uscan-template
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Thu, 11 Sep 2025 16:51:02 +0200
+
+libnginx-mod-nchan (1:1.3.7+dfsg-3) unstable; urgency=medium
+
+  * d/p/FTBFS-fix-gcc-15.patch add, fix build with gcc-15 (Closes: 1097235)
+  * d/gbp.conf: dist = DEP14, debian-branch = debian/latest
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Fri, 05 Sep 2025 07:54:52 +0200
+
+libnginx-mod-nchan (1:1.3.7+dfsg-2) unstable; urgency=medium
+
+  * d/control: update my email to janmojzis@debian.org
+  * d/copyright: update my email to janmojzis@debian.org
+  * d/control: bump Standards-Version: 4.7.2, no changes
+  * d/copyright: bump debian/* copyright year
+  * d/watch: use more generic template
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Fri, 11 Apr 2025 14:27:04 +0200
+
+libnginx-mod-nchan (1:1.3.7+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 1.3.7
+  * d/control: bump Standards-Version: 4.7.0, no changes
+  * d/copyright: bump copyright year
+  * d/gbp.conf: add [pull] track-missing = True
+  * d/control, d/t/control: wrap-and-sort -asbkt
+  * d/watch: use new recommended github template
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 23 Oct 2024 20:49:28 +0200
+
+libnginx-mod-nchan (1:1.3.6+dfsg-4) unstable; urgency=medium
+
+  * d/control: remove Build-Depends nginx-abi-1.24.0-1
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sat, 07 Oct 2023 15:31:29 +0200
+
+libnginx-mod-nchan (1:1.3.6+dfsg-3) unstable; urgency=medium
+
+  * NEW ABI: rebuild with nginx-abi-1.24.0-1
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 27 Jun 2023 23:16:41 +0200
+
+libnginx-mod-nchan (1:1.3.6+dfsg-2) unstable; urgency=medium
+
+  * d/copyright: reformat text to be compatible with 'cme update dpkg-copyright'
+  * d/copyright: fix missing BSD-1-clause
+  * NEW ABI: rebuild with nginx-abi-1.22.1-7
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Mon, 13 Feb 2023 12:56:54 +0100
+
+libnginx-mod-nchan (1:1.3.6+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 1.3.6
+  * d/changelog: fixed spelling-error-in-changelog, spelling-error-in-copyright
+  * d/control: bump Standards-Version: 4.6.2, no changes
+  * d/copyright: remove 'nchan' from Files-Excluded
+  * d/copyright: bump my copyright year
+  * d/p/ca871576826e83ff1dfefdb1b2cbea914aeb16ea.patch removed: fixed in
+    upstream
+  * d/gbb.conf: switched to debian branch main (debian-branch = main)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Sun, 08 Jan 2023 12:48:45 +0100
+
+libnginx-mod-nchan (1:1.3.5+dfsg-3) unstable; urgency=medium
+
+  [ Jan Mojžíš ]
+  * d/t/generic rework. The test now checks HTTP request:
+    - after module installation
+    - after nginx reload
+    - after nginx restart.
+    The test caught a SIGSEGV problem in the nchan 1.3.5 module
+    after nginx reload.
+
+  [ Jérémy Lal ]
+  * d/p/ca871576826e83ff1dfefdb1b2cbea914aeb16ea.patch added, fixes the problem
+    when nginx with nchan module crash on SIGHUP
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Thu, 15 Dec 2022 17:27:27 +0100
+
+libnginx-mod-nchan (1:1.3.5+dfsg-2) unstable; urgency=medium
+
+  * d/control: added Multi-Arch: foreign
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 06 Dec 2022 20:36:26 +0100
+
+libnginx-mod-nchan (1:1.3.5+dfsg-1) experimental; urgency=medium
+
+  * Initial release. (Closes: 1024377)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 30 Nov 2022 14:47:01 +0100
